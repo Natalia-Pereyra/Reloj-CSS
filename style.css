@@ -1,0 +1,111 @@
+#reloj img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+#reloj .segundos {
+  width: 250px;
+  height: 3px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(red));
+  background-image: linear-gradient(to right, #fff, red);
+  border-radius: 10px;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  -webkit-animation-name: clock;
+          animation-name: clock;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+#reloj .minutos {
+  width: 190px;
+  height: 8px;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(coral));
+  background-image: linear-gradient(to right, #fff, coral);
+  top: 47%;
+  left: 49.4%;
+  border-radius: 10px;
+  -webkit-animation-name: clock;
+          animation-name: clock;
+  -webkit-animation-duration: 3600s;
+          animation-duration: 3600s;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+#reloj .hora {
+  width: 140px;
+  height: 8px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#000));
+  background-image: linear-gradient(to right, #fff, #000);
+  border-radius: 10px;
+  position: absolute;
+  top: 35%;
+  left: 44%;
+  -webkit-animation-name: clock;
+          animation-name: clock;
+  -webkit-animation-duration: 43200s;
+          animation-duration: 43200s;
+}
+
+#reloj .circulo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  position: absolute;
+  top: 45%;
+  left: 48%;
+}
+
+@-webkit-keyframes clock {
+  0% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes clock {
+  0% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
