@@ -1,4 +1,5 @@
 #reloj {
+  margin-top: 30px;
   img {
     width: 50%;
     height: auto;
@@ -12,8 +13,8 @@
     background-image: linear-gradient(to right, #fff, red);
     border-radius: 10px;
     position: absolute;
-    top: 47%;
-    left: 50%;
+    top: 49.5%;
+    left: 49.5%;
     animation-name: clock;
     animation-duration: 60s;
     animation-timing-function: linear;
@@ -29,7 +30,7 @@
     height: 8px;
     position: absolute;
     background-image: linear-gradient(to right, #fff, coral);
-    top: 47%;
+    top: 49%;
     left: 49.4%;
     border-radius: 10px;
     animation-name: clock;
@@ -47,7 +48,7 @@
     background-image: linear-gradient(to right, #fff, #000);
     border-radius: 10px;
     position: absolute;
-    top: 35%;
+    top: 37%;
     left: 44%;
     animation-name: clock;
     animation-duration: 43200s;
@@ -58,8 +59,8 @@
     border-radius: 50%;
     background-color: #dbdbdb;
     position: absolute;
-    top: 45%;
-    left: 48%;
+    top: 47.5%;
+    left: 47.8%;
   }
 }
 
@@ -67,7 +68,24 @@
   0% {
     transform: rotate(-90deg);
   }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(270deg);
+  }
+}
+
+a {
+  text-decoration: none;
+  button {
+    display: block;
+    margin: 30px auto;
   }
 }
